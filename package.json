@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon  node index.js"
+    "dev": "nodemon  node src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,8 @@
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "nodemailer": "^6.9.13"
+    "netlify-lambda": "^2.0.16",
+    "nodemailer": "^6.9.13",
+    "serverless-http": "^3.2.0"
   }
 }

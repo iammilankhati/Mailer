@@ -1,0 +1,15 @@
+[functions]
+    directory = "src"
+    node_bundler = "esbuild"
+    external_node_modules = ["dotenv","ejs", "express", "nodemailer", "serverless-http"]
+
+[build]
+    command = "echo Building functions"
+    functions = "src"
+
+[[redirects]]
+    force = true
+    from = "/api/*"
+    to = "/.netlify/functions/api/:splat"
+    status = 200
+
